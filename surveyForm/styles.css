@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  --titleFont: "Bangers", serif;
+  --normalFont: "Roboto", serif;
+}
+
+body {
+  animation: fade-in ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: var(--normalFont);
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+fieldset, .form-group {
+  margin: 1rem 0;
+}
+
+.bangersRegular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.robotoRegular {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons on Different Lines</title>
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1 id="title" class="bangersRegular">Marvel Madness: The Ultimate MCU Fan Survey</h1>
+    <p id="description">Ready to spill the beans? This isn’t just any survey – it’s your chance to tell us all about your favorite MCU characters and those epic moments that make you scream ‘WAKANDA FOREVER!’ (Or ‘I am Groot!’). Whether you’re Team Cap or Team Iron Man, we want to know what makes you the superhero (or villain) you are. So grab your shield, suit up, and let’s have some fun! Let’s assemble this survey in Marvel style!</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <div class="form-group">
+          <label id="name-label" for="name">Name: 
+            <input id="name" type="text" placeholder="Enter name" required>
+          </label> 
+        </div>
+        
+        <div class="form-group">
+          <label id="email-label" for="email">Your Email: 
+            <input id="email" type="email" placeholder="Enter email" required>
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <label id="number-label" for="number">Your Age (optional): 
+            <input id="number" type="number" min="16" max="100" placeholder="Enter age">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="form-group">
+          <p>Which Marvel team would you join to save the multiverse?</p>
+          <select id="dropdown">
+            <option id="none" value="">...</option>
+            <option id="avengers" value="Avengers">The Avengers (Classic squad)</option>
+            <option id="guardians" value="Guardians of the Galaxy">Guardians of the Galaxy (Dance battles included)</option>
+            <option id="xmen" value="X-Men">X-Men (Mutant powers, here I come)</option>
+            <option id="wakandan" value="Wakandan Warriors">Wakandan Warriors (Wakanda Forever!)</option>
+            <option id="defenders" value="The Defenders">The Defenders (Street-level heroes with sass)</option>
+            <option id="ownTeam" value="Own Team">A team of my own (Because I’m the real MVP)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>If you could pick your superhero origin story, which one would you choose?</p>
+          <label for="originSpider">
+            <input id="originSpider" type="radio" name="origin" value="spider"> Bitten by a radioactive spider (Spidey vibes)
+          </label>
+          <label for="originGod">
+            <input id="originGod" type="radio" name="origin" value="god"> Born a god (because who doesn’t want to be Thor)
+          </label>
+          <label for="originBillionaire">
+            <input id="originBillionaire" type="radio" name="origin" value="billionaire"> Billionaire genius with a suit of armor (Tony Stark’s swag)
+          </label>
+          <label for="originExperiment">
+            <input id="originExperiment" type="radio" name="origin" value="experiment"> Experiment gone right... or wrong? (Hello, Captain America)
+          </label>
+          <label for="originAlien">
+            <input id="originAlien" type="radio" name="origin" value="alien"> Alien from another planet (Superpowers AND a cool spaceship)
+          </label>
+          <label for="originWizardry">
+            <input id="originWizardry" type="radio" name="origin" value="wizardry"> Mystical wizardry (Dr. Strange's vibe)
+          </label>
+        </div>                
+        
+        <div class="form-group">
+          <p>On a scale of 1-5, how confident are you in your ability to lift Thor’s hammer, Mjölnir?</p>
+          <label for="option1">
+            <input id="option1" type="radio" name="option" value="1"> &#9733; I wouldn’t even try
+          </label>
+          <label for="option2">
+            <input id="option2" type="radio" name="option" value="2"> &#9733&#9733 Maybe on a good day... after a workout
+          </label>
+          <label for="option3">
+            <input id="option3" type="radio" name="option" value="3"> &#9733&#9733&#9733 I’m worthy-ish?
+          </label>
+          <label for="option4">
+            <input id="option4" type="radio" name="option" value="4"> &#9733&#9733&#9733&#9733 I’m feeling Asgardian today!
+          </label>
+          <label for="option5">
+            <input id="option5" type="radio" name="option" value="5"> &#9733&#9733&#9733&#9733&#9733 I <i>am</i> the chosen one!
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Which Marvel shenanigans are totally your vibe? <i>You may select more than one.</i></p>
+          <label>
+            <input type="checkbox" name="shenanigan" value="deadpoolOneLiners"> Trading sarcastic one-liners with Deadpool (and probably losing)
+          </label>
+          <label>
+            <input type="checkbox" name="shenanigan" value="spidermanPranks"> Teaming up with Spider-Man to prank the Avengers (webs everywhere)
+          </label>
+          <label>
+            <input type="checkbox" name="shenanigan" value="thorHammer"> Attempting to lift Thor’s hammer (It’s all about technique, right?)
+          </label>
+          <label>
+            <input type="checkbox" name="shenanigan" value="hulkWorkout"> Joining Hulk for a smashing workout (literally)
+          </label>
+          <label>
+            <input type="checkbox" name="shenanigan" value="rocketRoadtrip"> Road-tripping with Rocket and Groot (You’re bringing snacks)
+          </label>
+          <label>
+            <input type="checkbox" name="shenanigan" value="moonknightMysteries"> Solving supernatural mysteries with Moon Knight (and trying to keep track of his personalities)
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <p>Describe your dream MCU crossover scene.</p>
+          <input type="textarea">
+        </div>
+        
+      </fieldset>
+
+      <input id="submit" type="submit">        
+    </form>
+  </body>
+</html>
